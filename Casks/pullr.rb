@@ -4,10 +4,11 @@ cask "pullr" do
 
   url "https://github.com/Italian-seasoning/Pullr/releases/download/v#{version}/Pullr-#{version}-macOS.zip"
   name "Pullr"
-  desc "Native, local-first macOS media download queue"
+  desc "Native, local-first media download queue"
   homepage "https://github.com/Italian-seasoning/Pullr"
 
   auto_updates true
+  depends_on macos: ">= :sonoma"
 
   app "Pullr-#{version}.app", target: "Pullr.app"
 end

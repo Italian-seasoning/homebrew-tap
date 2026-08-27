@@ -4,10 +4,11 @@ cask "codex-usage-monitor" do
 
   url "https://github.com/Italian-seasoning/CodexUsageMonitor/releases/download/v#{version}/CodexUsageMonitor-#{version}-macOS.zip"
   name "Codex Usage Monitor"
-  desc "Native macOS Codex usage, model cost, and WidgetKit monitor"
+  desc "Codex usage, model cost, and WidgetKit monitor"
   homepage "https://github.com/Italian-seasoning/CodexUsageMonitor"
 
   auto_updates true
+  depends_on macos: ">= :sonoma"
 
   app "CodexUsageMonitor.app"
 end
