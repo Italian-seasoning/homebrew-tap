@@ -12,8 +12,12 @@ cask "pullr" do
 
   app "Pullr-#{version}.app", target: "Pullr.app"
 
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pullr.app"]
+  end
+
   caveats <<~EOS
     Pullr is not Apple-notarized.
-    Install this cask with --no-quarantine so macOS can launch it.
+    This cask removes macOS quarantine after verifying the pinned SHA-256.
   EOS
 end

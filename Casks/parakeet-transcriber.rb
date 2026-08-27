@@ -14,8 +14,12 @@ cask "parakeet-transcriber" do
 
   app "Parakeet Transcriber.app"
 
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Parakeet Transcriber.app"]
+  end
+
   caveats <<~EOS
     Parakeet Transcriber is ad-hoc signed and not Apple-notarized.
-    Install this cask with --no-quarantine so macOS can launch it.
+    This cask removes macOS quarantine after verifying the pinned SHA-256.
   EOS
 end
