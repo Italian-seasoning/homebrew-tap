@@ -7,6 +7,7 @@ Homebrew casks for [Italian-seasoning](https://github.com/Italian-seasoning) mac
 ```sh
 brew install --cask italian-seasoning/tap/pullr
 brew install --cask italian-seasoning/tap/codex-usage-monitor
+brew install --cask --no-quarantine italian-seasoning/tap/parakeet-transcriber
 ```
 
-Both apps include Sparkle for in-app updates.
+All apps include Sparkle for in-app updates. Parakeet Transcriber is currently ad-hoc signed and requires `--no-quarantine`; the other apps are Apple-notarized.
