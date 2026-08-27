@@ -8,7 +8,7 @@ cask "codex-usage-monitor" do
   homepage "https://github.com/Italian-seasoning/CodexUsageMonitor"
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "CodexUsageMonitor.app"
 end

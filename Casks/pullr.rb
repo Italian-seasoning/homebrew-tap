@@ -8,7 +8,7 @@ cask "pullr" do
   homepage "https://github.com/Italian-seasoning/Pullr"
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Pullr-#{version}.app", target: "Pullr.app"
 end
