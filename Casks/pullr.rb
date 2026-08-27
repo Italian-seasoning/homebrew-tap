@@ -11,4 +11,9 @@ cask "pullr" do
   depends_on macos: :sonoma
 
   app "Pullr-#{version}.app", target: "Pullr.app"
+
+  caveats <<~EOS
+    Pullr is not Apple-notarized.
+    Install this cask with --no-quarantine so macOS can launch it.
+  EOS
 end

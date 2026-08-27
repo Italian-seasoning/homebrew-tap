@@ -11,4 +11,9 @@ cask "codex-usage-monitor" do
   depends_on macos: :sonoma
 
   app "CodexUsageMonitor.app"
+
+  caveats <<~EOS
+    Codex Usage Monitor is not Apple-notarized.
+    Install this cask with --no-quarantine so macOS can launch it.
+  EOS
 end
