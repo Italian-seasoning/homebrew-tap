@@ -1,6 +1,6 @@
 cask "parakeet-transcriber" do
-  version "1.0"
-  sha256 "93878471518401e3684cc0febbe9f9b19912d8b49c0439a9cc695ab931e8020e"
+  version "1.1"
+  sha256 "6443209bef23bceff32f465de533cbe00a1c984825c49d6a106389a7992a1594"
 
   url "https://github.com/Italian-seasoning/ParakeetTranscriber/releases/download/v#{version}/Parakeet-Transcriber-#{version}.zip"
   name "Parakeet Transcriber"
