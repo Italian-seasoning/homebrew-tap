@@ -1,6 +1,6 @@
 cask "capturely" do
-  version "0.1.0"
-  sha256 "d931faabe1f16fbadaa57ce73a79b79de3abeaee2e8bd11418cc04def1428f5d"
+  version "0.1.1"
+  sha256 "1d6b9c6a3450c8a17c9f2d853793c06b785c8db9db2d2567c557afaa481aa504"
 
   url "https://github.com/Italian-seasoning/Capturely/releases/download/v#{version}/Capturely-#{version}-macOS.zip"
   name "Capturely"
