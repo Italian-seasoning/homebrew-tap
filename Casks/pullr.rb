@@ -10,7 +10,7 @@ cask "pullr" do
   auto_updates true
   depends_on macos: :sonoma
 
-  app "Pullr-#{version}.app", target: "Pullr.app"
+  app "Pullr.app"
 
   postflight_steps do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pullr.app"]
