@@ -1,6 +1,6 @@
 cask "codex-usage-monitor" do
-  version "3.1.1"
-  sha256 "024d95c593c5492f95c07893b22f0fdf5e3ea4f63f56b53a4d376c746ce3eed7"
+  version "3.1.2"
+  sha256 "12e9c2f83dff0de16de59e6b66428b7991a484edf1eebdf7821eba4a1e023510"
 
   url "https://github.com/Italian-seasoning/CodexUsageMonitor/releases/download/v#{version}/CodexUsageMonitor-#{version}-macOS.zip"
   name "Codex Usage Monitor"
