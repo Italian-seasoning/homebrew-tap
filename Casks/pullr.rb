@@ -1,23 +1,21 @@
 cask "pullr" do
-  version "1.1.1"
-  sha256 "3d15c1b40c955e8035eaf6f18f639ed7f169ea79df1ac29e04652d30951699e2"
+  version "1.1.2"
+  sha256 "5745140ea7205516bfb76113d34fd01400925e3726dd014e3a17187d199301e9"
 
   url "https://github.com/Italian-seasoning/Pullr/releases/download/v#{version}/Pullr-#{version}-macOS.zip"
   name "Pullr"
-  desc "Native, local-first media download queue"
-  homepage "https://github.com/Italian-seasoning/Pullr"
+  desc "Native media download queue"
+  homepage "https://nolan-mac-apps.nolankrahn.chatgpt.site/apps/pullr"
 
   auto_updates true
+  depends_on formula: ["yt-dlp", "ffmpeg", "deno"]
   depends_on macos: :sonoma
 
   app "Pullr.app"
 
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pullr.app"]
-  end
-
   caveats <<~EOS
-    Pullr is not Apple-notarized.
-    This cask removes macOS quarantine after verifying the pinned SHA-256.
+    Pullr is a preview release and is not Apple-notarized.
+    Homebrew verifies the pinned SHA-256; macOS Gatekeeper checks remain enabled.
+    If macOS blocks the first launch, review it in System Settings > Privacy & Security.
   EOS
 end

@@ -1,23 +1,22 @@
 cask "capturely" do
-  version "0.1.1"
-  sha256 "1d6b9c6a3450c8a17c9f2d853793c06b785c8db9db2d2567c557afaa481aa504"
+  version "0.1.3"
+  sha256 "4988f29426ff96e6d256dea87fbae0d7039aaa6058d3853aedafa3f95d5a98c3"
 
   url "https://github.com/Italian-seasoning/Capturely/releases/download/v#{version}/Capturely-#{version}-macOS.zip"
   name "Capturely"
-  desc "Native replay clipping for games"
-  homepage "https://github.com/Italian-seasoning/Capturely"
+  desc "Native game replay capture and clip review"
+  homepage "https://nolan-mac-apps.nolankrahn.chatgpt.site/apps/capturely"
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: :tahoe
 
   app "Capturely.app"
 
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Capturely.app"]
-  end
-
   caveats <<~EOS
-    Capturely is not Apple-notarized.
-    This cask removes macOS quarantine after verifying the pinned SHA-256.
+    Capturely is a preview release and is not Apple-notarized.
+    Homebrew verifies the pinned SHA-256; macOS Gatekeeper checks remain enabled.
+    If macOS blocks the first launch, review it in System Settings > Privacy & Security.
+    Screen Recording access is required for capture.
   EOS
 end
