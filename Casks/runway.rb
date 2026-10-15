@@ -1,16 +1,16 @@
 cask "runway" do
-  version "4.0.3"
-  sha256 "ac091206733f03efe426e99a1095678f46ba763aa0a67d5573a7d54e32972386"
+  version "4.0.8"
+  sha256 "47379b56fd32976e239f8c4f5910239a4ad3e1fb8172ab5929a948cecf3bc4ec"
 
-  url "https://github.com/Italian-seasoning/CodexUsageMonitor/releases/download/v#{version}/CodexUsageMonitor-#{version}-macOS.zip"
+  url "https://github.com/Italian-seasoning/CodexUsageMonitor/releases/download/v#{version}/Runway-#{version}-macOS.zip"
   name "Runway"
   desc "Local Codex usage monitor with menu bar readings and widgets"
-  homepage "https://nolan-mac-apps.nolankrahn.chatgpt.site/apps/codex-usage"
+  homepage "https://italian-seasoning.github.io/CodexUsageMonitor/"
 
   auto_updates true
   depends_on macos: :sonoma
 
-  app "CodexUsageMonitor.app"
+  app "Runway.app"
 
   caveats <<~EOS
     Runway is a preview release and is not Apple-notarized.

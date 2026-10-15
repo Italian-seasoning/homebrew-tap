@@ -1,13 +1,13 @@
 # Homebrew Tap
 
 Homebrew casks for [Italian-seasoning](https://github.com/Italian-seasoning) macOS apps.
-[Explore the software showcase](https://nolan-mac-apps.nolankrahn.chatgpt.site).
+[View the Runway website](https://italian-seasoning.github.io/CodexUsageMonitor/).
 
 ## Install
 
 | App | Current preview | Minimum macOS | Command |
 | --- | --- | --- | --- |
-| Runway | 4.0.2 | 14 | `brew install --cask italian-seasoning/tap/runway` |
+| Runway | 4.0.8 | 14 | `brew install --cask italian-seasoning/tap/runway` |
 | Pullr | 1.1.2 | 14 | `brew install --cask italian-seasoning/tap/pullr` |
 | Parakeet Transcriber | 1.2 | 13 · Apple silicon | `brew install --cask italian-seasoning/tap/parakeet-transcriber` |
 | Capturely | 0.1.3 | 26 · Apple silicon | `brew install --cask italian-seasoning/tap/capturely` |
@@ -27,11 +27,11 @@ All five apps also include Sparkle for signed in-app updates. `--greedy` include
 
 ## Runway migration
 
-Runway was previously named Codex Usage Monitor. `cask_renames.json` maps `codex-usage-monitor` to `runway`; after `brew update`, Homebrew can migrate the installed cask. The installed bundle remains `CodexUsageMonitor.app` for update and widget compatibility.
+Runway was previously named Codex Usage Monitor. `cask_renames.json` maps `codex-usage-monitor` to `runway`; after `brew update`, Homebrew can migrate the installed cask. The installed app is now `Runway.app`; its existing bundle identifiers preserve update and widget compatibility.
 
 ## Preview signing
 
-These releases are not Apple-notarized. Each cask verifies a version-pinned SHA-256 checksum and leaves macOS Gatekeeper checks enabled. If macOS blocks a first launch, review the app in **System Settings → Privacy & Security**. A checksum verifies the published archive; it is not Apple notarization.
+Runway 4.0.8 uses anonymous ad-hoc signing and is not Apple-notarized. Each cask verifies a version-pinned SHA-256 checksum and leaves macOS Gatekeeper checks enabled. If macOS blocks a first launch, review the app in **System Settings → Privacy & Security**. A checksum verifies the published archive; it is not Apple notarization.
 
 Capturely needs Screen Recording access to capture footage. FrameBar needs it for game readings. Parakeet models are downloaded by the CLI when needed.
 
