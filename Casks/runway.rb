@@ -1,6 +1,6 @@
 cask "runway" do
-  version "4.0.8"
-  sha256 "47379b56fd32976e239f8c4f5910239a4ad3e1fb8172ab5929a948cecf3bc4ec"
+  version "4.0.9"
+  sha256 "622940d229d57778cfc3138c643ab4cb644ce76ed74418a2908f15a8b2781cf8"
 
   url "https://github.com/Italian-seasoning/CodexUsageMonitor/releases/download/v#{version}/Runway-#{version}-macOS.zip"
   name "Runway"
