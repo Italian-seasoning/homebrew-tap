@@ -1,6 +1,6 @@
 cask "pullr" do
-  version "1.1.2"
-  sha256 "5745140ea7205516bfb76113d34fd01400925e3726dd014e3a17187d199301e9"
+  version "1.1.4"
+  sha256 "0f234cfd176af86fa85adb94d72de787981c8003a9c92470f3ed392798b4bc88"
 
   url "https://github.com/Italian-seasoning/Pullr/releases/download/v#{version}/Pullr-#{version}-macOS.zip"
   name "Pullr"

@@ -8,7 +8,7 @@ Homebrew casks for [Italian-seasoning](https://github.com/Italian-seasoning) mac
 | App | Current preview | Minimum macOS | Command |
 | --- | --- | --- | --- |
 | Runway | 4.0.9 | 14 | `brew install --cask italian-seasoning/tap/runway` |
-| Pullr | 1.1.2 | 14 | `brew install --cask italian-seasoning/tap/pullr` |
+| Pullr | 1.1.4 | 14 | `brew install --cask italian-seasoning/tap/pullr` |
 | Parakeet Transcriber | 1.2 | 13 · Apple silicon | `brew install --cask italian-seasoning/tap/parakeet-transcriber` |
 | Capturely | 0.1.3 | 26 · Apple silicon | `brew install --cask italian-seasoning/tap/capturely` |
 | FrameBar | 1.0.2 | 14 | `brew install --cask italian-seasoning/tap/framebar` |
